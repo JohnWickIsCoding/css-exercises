@@ -8,10 +8,37 @@ body {
   font-family: Besley, serif;
 }
 
+.header, .left, ul, .right{
+  display: flex;
+} 
+
+.left, .right{
+  align-items: center;
+}
+
+.left, .right, ul{
+  gap: 20px;
+}
+
+/* Instead of applying justify-content: space-between; to header, we can also do this instead 
+.right{
+  margin-left: auto;
+} */
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
 }
 
 .profile-image {
@@ -43,6 +70,4 @@ a {
   color: rebeccapurple;
 }
 
-ul {
-  list-style-type: none;
-}
+
